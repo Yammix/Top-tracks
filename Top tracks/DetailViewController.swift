@@ -34,6 +34,17 @@ class DetailViewController: UITableViewController {
     }
 
     @IBAction func searchButtonPressed(_ sender: UIBarButtonItem) {
+        
+        let alert = UIAlertController(title: "choose Country", message: "", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Search", style: .default) { (action) in
+            print("Success")
+            
+            
+        }
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    
+        
     }
     
    
@@ -44,5 +55,5 @@ struct Data {
     let msg : String
 }
 let message = [
-Data(msg: "tra"),Data(msg: "Hola"),Data(msg: "marhaba"),Data(msg: "Bonjour")
+Data(msg: "Hello"),Data(msg: "Hola"),Data(msg: "marhaba"),Data(msg: "Bonjour")
 ]
