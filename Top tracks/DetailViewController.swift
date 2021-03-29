@@ -23,7 +23,7 @@ class DetailViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         cell = tableView.dequeueReusableCell (withIdentifier: "TrackDetail", for: indexPath)
-        cell.textLabel?.text = ""
+        cell.textLabel?.text = message[indexPath.row].msg
         return cell
     }
     
